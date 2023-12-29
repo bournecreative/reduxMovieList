@@ -1,13 +1,15 @@
 import "./styles.css";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import MoviePlaylist from "./components/MoviePlaylist";
 import SongPlaylist from "./components/SongPlaylist";
-import "./store/index";
+import { resetMovies } from "./store/index";
 
 export default function App() {
   const dispatch = useDispatch();
 
-  const handleResetClick = () => {};
+  const handleResetClick = () => {
+    dispatch(resetMovies());
+  };
 
   return (
     <div className="container is-fluid">
