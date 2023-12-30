@@ -2,7 +2,7 @@ import "./styles.css";
 import { useDispatch } from "react-redux";
 import MoviePlaylist from "./components/MoviePlaylist";
 import SongPlaylist from "./components/SongPlaylist";
-import { resetMovies } from "./store/index";
+import { resetMovies } from "./store";
 
 export default function App() {
   const dispatch = useDispatch();
